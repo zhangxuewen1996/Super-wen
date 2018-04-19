@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var date = new Date();
+        // console.log(date);
+        // var y = date.getFullYear();
+        // console.log(y);
+        // var m = date.getMonth() + 1;
+        // console.log(m);
+        // var d = date.getDate();
+        // var xq = date.getDay();
+        // switch(xq){
+        //     case 0:
+        //     xq = "星期天"
+        //     break;
+        //     case 1:
+        //     xq = "星期一"
+        //     break;
+        //     case 2:
+        //     xq = "星期二"
+        //     break;
+        //     case 3:
+        //     xq = "星期三"
+        //     break;
+        //     case 4:
+        //     xq = "星期四"
+        //     break;
+        //     case 5:
+        //     xq = "星期五"
+        //     break;
+        //     default:
+        //     xq = "星期六"
+
+        // }
+        // var h = date.getHours();
+        // var M = date.getMinutes();
+        // var s = date.getSeconds(); 
+        // function addZero(n){
+        //     return n<10? "0"+n : n;
+        // }
+        // var result = y + "-" + addZero(m) + "-" + addZero(d) + ";" + addZero(h) + ":" + addZero(M) + ":" + addZero(s) +xq;
+        // console.log(result);
+
+
+        // var date = new Date();
+        // var y = date.getFullYear();
+        // var mo = date.getMonth()+1;
+        // var d = date.getDate();
+        // var h = date.getHours();
+        // var mi = date.getMinutes();
+        // var s = date.getSeconds();
+        // function addZero(n) {
+        //     return n < 10 ? "0" + n : n;
+        // }
+        // var result = y + "-" + addZero(mo) + "-" + addZero(d) +"  "+ addZero(h) + ":" + addZero(mi) + ":" + addZero(s);
+        // console.log(result);
+
+        var date = new Date();
+        var y = date.getFullYear();
+        var mo = date.getMonth();
+        var d = date.getDate();
+        var h = date.getHours();
+        var mi = date.getMinutes();
+        var s = date.getSeconds();
+        function addZero(n) {
+            return n < 10 ? "0" + n : n;
+        }
+        var result = y+"-"+addZero(mo)+"-"+addZero(d)+"  "+addZero(h)+":"+addZero(mi)+":"+addZero(s);
+        console.log(result);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            background:url(../代码/images/1.jpg) no-repeat;
+        }
+
+        .back {
+            width: 100%;
+            height: 180px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .back img {
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+        <img src="images/4.jpg" alt="">
+        <img src="images/5.jpg" alt="">
+
+    </div>
+    <script>
+        var divs = document.getElementsByTagName("img");
+        for (var i = 0; i < divs.length; i++) {
+            //五个图片的点击事件保存的是一样的函数值
+            //同样的数据发、多个位置存储
+            //用命名函数的方式进行合并，减少空间的使用
+            divs[i].onclick = changepic;
+        }
+
+        function changepic() {
+            document.body.style.backgroundImage = "url(" + this.src + ")";
+        }
+    </script>
+</body>
+
+</html>

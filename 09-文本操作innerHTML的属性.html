@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id = "box">
+        我是文字
+        <p>我是一个段落</p>
+    </div>
+    <script>
+    box.innerHTML  += "我是新的内容";
+    console.log(box);
+    </script> -->
+
+    
+    <div id="box"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        //根据标签名获取元素
+        //document.getElementsByTagName("标签名")
+        var divs = document.getElementsByTagName("div");
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].style.width = "100px";
+            divs[i].style.height = "100px";
+            divs[i].style.backgroundColor = "red";
+            divs[i].style.marginBottom = "10px";
+        }
+    </script>
+</body>
+
+</html>
